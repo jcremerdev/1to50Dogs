@@ -12,6 +12,7 @@ function displayResults(responseJson, dogNumero) {
   console.log(responseJson);
   $('.results').html('');
   for (let i=0; i<dogNumero; i++) {
+    console.log('image added!');
     $('.results').append(
     `<img src="${responseJson.message[i]}" class="results-img">`
     );
